@@ -2,9 +2,15 @@
   "name": "daard-ol-viewer",
   "version": "1.0.0",
   "scripts": {
-    "start": "vite",
-    "build": "vite build && shx cp -r ./assets/img ./dist/assets",
-    "serve": "vite preview"
+    "start": "vite --mode development",
+    "dev": "vite --mode development",
+    "build": "vite build --mode development && shx cp -r ./assets/img ./dist/assets",
+    "build:dev": "vite build --mode development && shx cp -r ./assets/img ./dist/assets",
+    "build:prod": "vite build --mode production && shx cp -r ./assets/img ./dist/assets",
+    "build:production": "vite build --mode production && shx cp -r ./assets/img ./dist/assets",
+    "serve": "vite preview",
+    "preview:dev": "vite preview --mode development",
+    "preview:prod": "vite preview --mode production"
   },
   "devDependencies": {
     "shx": "^0.3.4",
