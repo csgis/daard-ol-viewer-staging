@@ -1,4 +1,4 @@
-import{G as a,m as r,r as d}from"./index-ead8fbab.js";const c=()=>{const i=`
+import{G as a,m as r,r as d}from"./index-fe514db0.js";const c=()=>{const i=`
     <div 
       id="backgroundSwticher"
       class="position-absolute bottom-0 start-0 ms-2 mb-2 d-flex" 
@@ -25,4 +25,4 @@ import{G as a,m as r,r as d}from"./index-ead8fbab.js";const c=()=>{const i=`
       </template>
     </div>
   `;var o=document.getElementById("map");o.insertAdjacentHTML("afterend",i)},m=(i,o)=>{const n=a.map(t=>({id:t.get("id"),img:t.get("img")}));r.store("backgroundSwitcher",{showAll:!1,shouldShow:function(t){return t===0||this.showAll},setBasemap:function(t){a.forEach(e=>{e.setVisible(e.get("id")===t)})},handleItemClick:function(t,e){if(e!==0){console.log(this.background);const s=this.background.indexOf(t);s!==-1&&(this.background.splice(s,1),this.background.unshift(t),this.setBasemap(t.id))}this.showAll=!this.showAll},toggleVisibility:function(){this.showAll=!this.showAll},background:n}),d([[c,"#backgroundSwticher"]])};export{m as initialize};
-//# sourceMappingURL=backgroundSwitcher-dc322b53.js.map
+//# sourceMappingURL=backgroundSwitcher-c0c109cb.js.map
