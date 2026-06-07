@@ -1,4 +1,4 @@
-import{m as a,r as n}from"./index-15822320.js";import"./feather-becb2378.js";import"./index-c4575d02.js";const r=()=>{let e=`
+import{m as a,r as n}from"./index-3482ff3a.js";import"./feather-becb2378.js";import"./index-c4575d02.js";const r=()=>{let e=`
     <div class="" id="layerPanelContainerStyleBody" x-show="$store.layerPanelContainer.sectionActive == 'layer-style'">
             <div class="offcanvas-body p-3">
                 Styles are not implemented yet :()
@@ -15,4 +15,4 @@ import{m as a,r as n}from"./index-15822320.js";import"./feather-becb2378.js";imp
     </button>
 
     `;var t=document.getElementById("layerPanelContainerNavBar");t.insertAdjacentHTML("beforeend",e)},i=async e=>{a.store("layerStyle",{buttonDomOrder:e}),n([[r,"#layerPanelContainerStyleBody"],[o,"#layerPanelNavStyleButton"]])};export{i as initialize};
-//# sourceMappingURL=layerStyle-68204b22.js.map
+//# sourceMappingURL=layerStyle-362559b2.js.map

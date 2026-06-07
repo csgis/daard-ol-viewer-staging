@@ -1,4 +1,4 @@
-import{m as i,a as l,I as d,V as g,r as c}from"./index-15822320.js";import"./feather-becb2378.js";const m=()=>{const t=`
+import{m as i,a as l,I as d,V as g,r as c}from"./index-3482ff3a.js";import"./feather-becb2378.js";const m=()=>{const t=`
       <div x-data="{ get legend() { return $store.legend; } }" class="mx-1" :class="'order-'+legend.buttonDomOrder" id="legendNavButton">
         <button type="button" 
           class="btn btn-danger btn-sm btn-circle" 
@@ -31,4 +31,4 @@ import{m as i,a as l,I as d,V as g,r as c}from"./index-15822320.js";import"./fea
           </div>
       </div>
     `;document.getElementById("rightBottomSlot").innerHTML=t},y=t=>{i.store("legend",{componentIsActive:!1,buttonDomOrder:t,showLegend:!1,visibleLayers:l.getLayers().getArray().filter(e=>e.getVisible()),toggleLegend(){this.componentIsActive=!this.componentIsActive,this.showLegend=!this.showLegend,this.updateVisibleLayers()},updateVisibleLayers(){if(this.visibleLayers=l.getLayers().getArray().filter(e=>e.getVisible()),this.visibleLayers.length==1){const e=this.visibleLayers[0];this.toggleDetails(e)}},getLegendUrl(e){const n=e.getSource();let s=typeof n.getUrl=="function"?n.getUrl():n.getUrl;const r=/(https?:\/\/[^/]+\/[^/]+)\//,o=s.match(r),a=o?o[1]:s;return e.getSource()instanceof d?`${a}/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=${n.getParams().LAYERS}`:n instanceof g?`${a}/wms?REQUEST=GetLegendGraphic&VERSION=1.0.0&FORMAT=image/png&WIDTH=20&HEIGHT=20&LAYER=${e.get("layername")}`:""},toggleDetails(e){console.log(e),e.showDetails=!e.showDetails}}),c([[m,"#legendNavButton"],[p,"#legendContainer"]]),document.addEventListener("mapLayerHaveChanged",function(e){console.debug('Custom event "mapLayerHaveChanged" caught. Updating legend Markup'),i.store("legend").updateVisibleLayers()})};export{y as initialize};
-//# sourceMappingURL=legend-66e01eca.js.map
+//# sourceMappingURL=legend-b8dc3d57.js.map

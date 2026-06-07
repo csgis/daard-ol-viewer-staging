@@ -1,4 +1,4 @@
-import{m as a,r as o}from"./index-15822320.js";import"./feather-becb2378.js";const i=()=>{const e=`
+import{m as a,r as o}from"./index-3482ff3a.js";import"./feather-becb2378.js";const i=()=>{const e=`
     <div 
         class="position-absolute start-0 top-0 bg-white h-100 w-40 p-3 ps-0 pt-0 shadow bg-light" 
         z-index="2000" 
@@ -32,4 +32,4 @@ import{m as a,r as o}from"./index-15822320.js";import"./feather-becb2378.js";con
             </button>
           </div>
     `;document.getElementById("rightMiddleSlot").insertAdjacentHTML("beforeend",e)},c=async e=>{a.store("layerPanelContainer",{componentIsActive:!1,buttonDomOrder:e,sectionActive:"layer-edit",setSectionActive:function(n){this.sectionActive=n,console.log(this.sectionActive)}}),o([[i,"#layerPanelContainer"],[l,"#layerPanelContainerButton"]]),console.log("init layerPanelContainerMarkup")};export{c as initialize};
-//# sourceMappingURL=layerPanelContainer-1249caf1.js.map
+//# sourceMappingURL=layerPanelContainer-a0014fe6.js.map
